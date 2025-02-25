@@ -22,7 +22,7 @@ function Hero() {
         style={{ filter: isDark ? "invert(1)" : "invert(0)" }}
       >
         <lottie-player
-          src="/tricodex/tricodex-animation.json"
+          src="/tricodex/public/tricodex-animation.json"
           background="transparent"
           speed="1"
           style={{ width: "100%", maxWidth: "624px" }}
