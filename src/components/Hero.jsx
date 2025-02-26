@@ -2,6 +2,7 @@ import React from "react";
 import * as TypeSystem from "./TypeSystem";
 import { ButtonPrimary } from "./IconButton";
 import { useTheme } from "../scripts/ThemeContext"; // Import theme context
+// import animationData from '../../public/tricodex-animation.json';
 
 function Hero() {
   const { isDark } = useTheme(); // Get dark mode state
@@ -22,7 +23,7 @@ function Hero() {
         style={{ filter: isDark ? "invert(1)" : "invert(0)" }}
       >
         <lottie-player
-          src="/tricodex/tricodex-animation.json"
+          src={`${process.env.PUBLIC_URL}/tricodex-animation.json`}
           background="transparent"
           speed="1"
           style={{ width: "100%", maxWidth: "624px" }}
