@@ -16,8 +16,8 @@ function Navbar() {
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-[8px]">
         <ThemeToggleButton />
-        <Buttons.ButtonDocumentation buttonText="Documentation" />
-        <Buttons.ButtonGithub buttonText="Github" />
+        <a href="https://github.com/web-dev-ak/tricodex?tab=readme-ov-file#tricodex-three-digit-character-encoding-algorithm" target="_blank"><Buttons.ButtonDocumentation buttonText="Documentation" /></a>
+        <a href="https://github.com/web-dev-ak/tricodex" target="_blank"><Buttons.ButtonGithub buttonText="Github" /></a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -44,8 +44,8 @@ function Navbar() {
       {isOpen && (
         <div className="absolute top-20 right-4 bg-[color:var(--color-bg)] drop-shadow-xl p-4 rounded-[36px] flex flex-col gap-4 md:hidden">
           {/* <ThemeToggleButton /> */}
-          <Buttons.ButtonDocumentation buttonText="Documentation" />
-          <Buttons.ButtonGithub buttonText="Github" />
+          <a href="https://github.com/web-dev-ak/tricodex?tab=readme-ov-file#tricodex-three-digit-character-encoding-algorithm" target="_blank"><Buttons.ButtonDocumentation buttonText="Documentation" /></a>
+          <a href="https://github.com/web-dev-ak/tricodex" target="_blank"><Buttons.ButtonGithub buttonText="Github" /></a>
         </div>
       )}
     </nav>

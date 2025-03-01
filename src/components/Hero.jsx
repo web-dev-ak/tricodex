@@ -2,7 +2,7 @@ import React from "react";
 import * as TypeSystem from "./TypeSystem";
 import { ButtonPrimary } from "./IconButton";
 import { useTheme } from "../scripts/ThemeContext"; // Import theme context
-// import animationData from '../../public/tricodex-animation.json';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function Hero() {
   const { isDark } = useTheme(); // Get dark mode state
@@ -19,17 +19,32 @@ function Hero() {
       </div>
       {/* Apply filter dynamically using inline styles */}
       <div
-        className="flex max-w-[39rem] min-w-[20rem]"
+        className="grid content-center"
         style={{ filter: isDark ? "invert(1)" : "invert(0)" }}
       >
-        <lottie-player
-          src={`${process.env.PUBLIC_URL}/tricodex-animation.json`}
+        {/* <lottie-player
+          // src={`${process.env.PUBLIC_URL}/tricodex-animation.json`}
+          src="https://lottie.host/4db0e8e3-5fcf-4c22-b4d4-9bef79fc6b01/ImGlB9dnKB.lottie"
           background="transparent"
           speed="1"
           style={{ width: "100%", maxWidth: "624px" }}
           loop
           autoplay
-        ></lottie-player>
+        ></lottie-player> */}
+
+        <DotLottieReact
+          className="
+          w-[25rem] h-[25rem] lg:w-[39rem] lg:h-[39rem] 
+          max-[400px]:w-full max-[400px]:h-full 
+          max-[425px]:w-[400px] max-[425px]:h-[400px]
+        "
+          src="https://lottie.host/717d57ad-bc27-4dc2-86be-0fbbc6738c6f/BnnvAWck6s.lottie"
+          background="transparent"
+          speed="1"
+          // style={{ width: "100%", height: "100%", aspectRatio: "square"}}
+          loop
+          autoplay
+        />
       </div>
     </main>
   );
