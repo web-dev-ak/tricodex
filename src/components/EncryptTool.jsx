@@ -3,7 +3,7 @@ import InputBox from "./InputBox";
 import { ButtonPrimary, IconButtonCopy, IconButtonPaste } from "./IconButton";
 import { encrypt, decrypt, charToCode, codeToChar } from "../scripts/algorithm";
 
-function EncryptTool() {
+function EncryptTool({ encryptToolRef }) {
   const [mode, setMode] = useState("encrypt");
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState("");
@@ -38,7 +38,7 @@ function EncryptTool() {
   };
 
   return (
-    <main className="px-4 sm:px-8 md:px-16 py-[6rem] flex flex-col gap-[3rem]">
+    <main ref={encryptToolRef} className="px-4 sm:px-8 md:px-16 py-[6rem] flex flex-col gap-[3rem]">
       <div className="text-display-medium font-mono">Tri-CodeX Online Tool</div>
 
       {/* Mode Selection */}

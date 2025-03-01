@@ -1,10 +1,10 @@
-import React from "react";
 import * as TypeSystem from "./TypeSystem";
 import { ButtonPrimary } from "./IconButton";
 import { useTheme } from "../scripts/ThemeContext"; // Import theme context
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { scrollToSection } from "../scripts/scrollAnimation";
 
-function Hero() {
+function Hero({ encryptToolRef }) {
   const { isDark } = useTheme(); // Get dark mode state
 
   return (
@@ -15,7 +15,8 @@ function Hero() {
           subHeading="Learn & Play with Encryption"
           paragraph="Explore the basics of encoding and decoding, or challenge your friends with secret encrypted messages! Simple and fun."
         />
-        <ButtonPrimary buttonText="Start Encrypting Your Message" />
+        
+        <ButtonPrimary onClick={() => scrollToSection(encryptToolRef)} buttonText="Start Encrypting Your Message" />
       </div>
       {/* Apply filter dynamically using inline styles */}
       <div
