@@ -11,7 +11,7 @@ function Documentation() {
           This is just a fun project created by me (Adarsh Singh)
         </h2>
         <h6 className="mt-[1.5rem]">
-          <a href="" className="text-blue-500">
+          <a href="https://github.com/web-dev-ak/tricodex/blob/main/TriCodeX%20Documentation.pdf" className="text-blue-500">
             Click here!
           </a>{" "}
           to download the PDF of documentation.
