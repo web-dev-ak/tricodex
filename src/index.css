@@ -19,7 +19,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-fg);
   transition: background-color 0.3s, color 0.3s;
-  display: flex;
+  display: grid;
   width: 100%;
   height: 100%;
   justify-content: center;
